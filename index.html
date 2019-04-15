@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jonathan Langton</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="resources\javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+
+    <div class="header-container">
+      <button class="button">BT</button>
+      <h1 class="logo">JL</h1>
+
+      <ul class="header-list-container">
+        <li class="header-li"><a href="#home" class="header-list">Home</a></li>
+        <li class="header-li"><a href="#portfolio" class="header-list">Portfolio</a></li>
+        <li class="header-li"><a href="#about-me" class="header-list">About Me</a></li>
+      </ul>
+
+      <ul class="contact-list-container">
+        <li class="contact-li"><a href="#popup1"><img src="./resources/images/Discord-Logo-Black.png" alt="discord logo" class="discord-logo popup-button" /></a></li>
+        <li class="contact-li"><a href="mailto:Jonathan@langtons.me" target="_blank"><img src="./resources/images/main-logo.png" alt="discord logo" class="mail-logo" /></a></li>
+      </ul>
+    </div>
+
+
+
+    <div id="popup1" class="overlay">
+    	<div class="popup">
+    		<h2 class="copy-header">Click To Copy To Clipboard</h2>
+    		<a class="close" href="#">&times;</a>
+    		<div class="content">
+
+          <div class="hidden">
+            <input type="text" id="copytxt"/>
+          </div>
+
+    			<p class="discord-text" id="myInput" onClick='myFunction(this)'>Jonnie#9096</p>
+    		</div>
+    	</div>
+    </div>
+
+
+    <!-- Fixed Background -->
+    <span id="home"> </span>
+    <div class="whole-page-container">
+      <div class="fixed-background"></div>
+
+      <div class="welcome-message fade-in">
+        <h1 class="welcome-header">Hello.</h1>
+      </div>
+
+    </div>
+
+    <a href="#portfolio"><span class="arrow">&#8675;</span></a>
+
+
+    <!-- Portfolio Section -->
+    <div class="portfolio-container" id="portfolio">
+      <h1 class="portfolio-header fade-in">Portfolio</h1>
+      <div class="item-container">
+
+        <div class="portfolio-item">
+          <h1 class="portfolio-item-header">Matt Hawker</h1>
+          <a href="./resources/website-previews/matt-hawker/index.html" class="example1-a">
+            <img src="https://i.ibb.co/0XC4p7q/4.png" alt="Website Example Thumbnail" class="portfolio-thumbnail" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <h1 class="portfolio-item-header">Excursion</h1>
+          <a href="./resources/website-previews/excursion/index.html" class="example1-a">
+            <img src="https://i.ibb.co/ZTTTjXM/1.png" alt="Website Example Thumbnail" class="portfolio-thumbnail" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <h1 class="portfolio-item-header">Capstone Colmar</h1>
+          <a href="./resources/website-previews/capstone-colmar/index.html" class="example1-a">
+            <img src="https://i.ibb.co/dt0mdjn/2.png" alt="Website Example Thumbnail" class="portfolio-thumbnail" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <h1 class="portfolio-item-header">James Lee</h1>
+          <a href="./resources/website-previews/james-lee/index.html" class="example1-a">
+            <img src="https://i.ibb.co/Dwtf6Hc/3.png" alt="Website Example Thumbnail" class="portfolio-thumbnail" />
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- about-me Section -->
+    <div class="about-me-container" id="about-me">
+      <h1 class="about-me-section-header fade-in">About Me</h1>
+      <div class="about-me-item-container">
+        <div class="about-me">
+          <img src="./resources/images/Profile-Picture.png" alt="profile picture" class="profile-picture" />
+
+          <div class="left-right-container">
+          <div class="left-section">
+            <h1 class="about-me-header">Introduction</h1>
+            <p class="about-me-speech"><i>"Hello, I'm Jonathan. My interests are mostly related to computers, however, I love setting myself challenges and then going out to complete them, no matter how crazy they seem. I've listed some of my accomplishments & hobbies below and hopefulyl I'll be able to expand the list over the years to come. I've always had an interest in computers ever since I got my first PC. I first started out using it to play games, but then started to get curious about how everything is displayed. I experimented with HTML and CSS code on the school computers and found that there was something extremely satisfying about creating a website from scratch, so I sent myself on a 10 week accelerated codeacademy website development course. I loved it, and looking back at it, my understanding of HTML, CSS, JavaScript and my interest in web development has increased exponentially. I created this website partly because the domain <i>'JonathanLangton.com'</i> wasn't taken yet, but also because I wanted a central place where I could keep a little summary of my life."</i></P>
+          </div>
+
+          <div class="right-section">
+            <h1 class="about-me-header">Accomplishments / Hobbies</h1>
+
+            <div class="accomplishments-container">
+
+
+              <div class="accomplishment1">
+                <h1 class="accomplishment-header">Devizes To Westminster Canoe Race | Easter 2018/19</h1>
+                <p class="accomplishment-text">Devizes to Westminster canoe race is arguably the most challenging canoe race in the world. It's 125 miles long, split over 4 days and has 77 portages (locks in the canal that you have to get the boat out and run round then put it back in as fast as you can). It pushes you to your mental and physical limits. I competed in the 2018 DW race with my kayaking partner Adam (In a double kayak (K2)). We had been training for 6 months and unfortunately, due to the harsh weather conditions, the race was called off half way. We placed 9th overall and felt as if we had unfinished business and so we continued training three times every week for the next year to take on the challenge once again.</p>
+
+                <div class="image-container-outer">
+                  <div class="left-scroll arrow-left arrow-click">&#8672;</div>
+                  <div class="right-scroll arrow-right arrow-click">&#8674;</div>
+
+                <div class="image-container">
+                  <img src="./resources/images/DW-2018.JPG" alt="DW Image" class="port-image" />
+                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
+                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
+                </div>
+              </div>
+            </div>
+
+
+
+              <div class="accomplishment1">
+                <h1 class="accomplishment-header">Codecademy Pro Intensive "Build Websites from Scratch" Course | Oct 2018</h1>
+                <p class="accomplishment-text">This course is a 10-week curriculum of website development fundamentals using HTML, CSS, JavaScript and Github. I found this course thoroughly enjoyable and has been a real spark for me. This course allowed me to find my passion for coding and I hope to continue learning different languages in the years to come (especially JavaScript and Python). <a href="https://www.credential.net/d912445u" target="_blank" class="certificate">Click here to view the certificate</a></p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="copyright-container">
+        <p class="copyright">Copyright &#9400; JonathanLangton.com 2019</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

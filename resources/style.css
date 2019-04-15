@@ -1,0 +1,727 @@
+/* Global */
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+ border: none !important;
+}
+
+button {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.border {
+  border: 1px solid red !important;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  margin-left: 1rem;
+  border: 1px solid black;
+}
+
+/* Background */
+body {
+  scroll-behavior: smooth;
+	width: 100wh;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+
+
+/* Fade Effect */
+.fade-in {
+  opacity: 0;
+  transition: 1s;
+  transform: scale(0.97);
+}
+
+.visible {
+  transition: 1s;
+  opacity: 1 !important;
+  transform: scale(1);
+}
+
+/* Header */
+.header-container {
+  width: 100%;
+  max-width: 100%;
+  height: 10%;
+  position: fixed;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  z-index: 10000000000000;
+  min-height: 84px;
+  background-color: rgba(0,0,0,0);
+  transition: .3s;
+}
+
+.header-container:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-weight: 300;
+  margin-left: 10%;
+  border: 1px solid black;
+  color: black;
+}
+
+.header-list {
+  text-decoration: none;
+  color: black;
+}
+
+.header-list-container {
+  border: 1px solid black;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 4rem;
+  justify-content: space-around;
+}
+
+.header-li {
+  margin: 1rem;
+  border: 1px solid red;
+  border-bottom: 0px solid rgba(0,0,0,0) !important;
+  transition: .3s;
+}
+
+.header-li:hover {
+  border-bottom: 3px solid black !important;
+}
+
+.contact-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  justify-content: space-around;
+  right: 5rem;
+}
+
+.contact-li {
+  margin-left: 2rem;
+  transition: .3s;
+}
+
+.contact-li:hover {
+  margin-top: 0.5rem;
+}
+
+.discord-logo {
+  height: 2rem;
+}
+
+.mail-logo {
+  height: 3rem;
+}
+/* Fixed Background */
+.whole-page-container {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.fixed-background {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 100px;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  right: 49%;
+  transition: .3s;
+  cursor: default;
+  color: white;
+}
+
+.arrow:hover {
+  bottom: 1rem;
+  color: black;
+}
+
+.arrow:active {
+  transition: .2s;
+  color: white;
+  bottom: 2rem;
+}
+
+#home {
+  width: 100%;
+  top: 0;
+  position: relative;
+}
+
+.welcome-message {
+  position: fixed;
+  text-align: center;
+  border: 1rem dashed white !important;
+  border-spacing: 1rem;
+  padding: 2rem;
+}
+
+.welcome-header {
+  font-size: 6rem;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  background-color: white;
+  z-index: 100;
+  margin-top: 61.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.portfolio-header {
+  font-size: 3rem;
+  padding-top: 2rem;
+  color: black;
+}
+
+.item-container {
+  max-width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  flex-direction: row;
+}
+
+.portfolio-item {
+  background-color: white;
+  width: 37.5rem;
+  min-width: 17.5rem;
+  color: black;
+  text-align: center;
+  margin: 2.5%;
+  border: 1px solid red;
+  overflow: hidden;
+  border: 1px solid black !important;
+  transition: box-shadow .3s, background-position 1s, color .6s;
+  background: linear-gradient(to right, #72B2A4 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.portfolio-item:hover {
+  box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.4);
+  background-position: left bottom;
+  color: white;
+}
+
+.portfolio-item-header {
+  padding: 1rem;
+}
+
+.portfolio-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.example1-a {
+  background-color: pink;
+}
+
+
+/* About Me */
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #72B2A4;
+  color: black;
+  position: relative;
+}
+
+.about-me-item-container {
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 5rem;
+  flex-flow: column;
+}
+
+.about-me-header {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.about-me {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  flex-flow: column;
+  padding: 0rem;
+}
+
+.about-me-section-header {
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+  font-size: 3rem;
+}
+
+.profile-picture {
+  width: 6rem;
+  margin-top: -5rem;
+  border-radius: 10rem;
+  position: relative;
+  border: 5px solid white !important;
+}
+
+.left-section {
+  min-width: 100%;
+  max-width: 60%;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid gray !important;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.right-section {
+  min-width: 45%;
+  padding: 0rem;
+  max-width: 100%;
+}
+
+.left-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.accomplishments-container {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.accomplishment1 {
+  width: 100%;
+  margin: 1rem;
+  max-width: 100%;
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid gray !important;
+}
+
+.accomplishment-header {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  }
+
+.image-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  max-width: 100%;
+  justify-content: flex-start;
+  padding: 0rem;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+}
+
+.port-image {
+  height: 45%;
+  width: 45%;
+  position: relative;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.certificate {
+  color: #72B2A4;
+  font-weight: bold;
+}
+
+.left-scroll {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border: 4px solid black !important;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0.75rem;
+  font-size: 3rem;
+  cursor: pointer;
+  left: 1.5rem;
+}
+
+.right-scroll {
+  position: absolute;
+  border: 4px solid black !important;
+  z-index: 2;
+  background-color: white;
+  border-radius: 1rem 0 0 1rem;
+  padding: 0.75rem;
+  font-size: 3rem;
+  cursor: pointer;
+  right: 1rem;
+}
+
+.image-container-outer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  border: 4px solid black !important;
+}
+
+
+
+/* Footer */
+.copyright-container {
+  height: 25rem;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.copyright {
+  color: white;
+  font-size: 1rem;
+  margin: 1rem;
+  transition: .3s;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 973px) {
+  .portfolio-container {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  .header-list-container {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 3rem;
+  }
+
+  .header-container {
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .button {
+    display: none;
+  }
+
+  .contact-list-container {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+  }
+
+  .contact-li {
+    margin: 2rem;
+  }
+
+  .contact-li:hover {
+    margin-top: auto;
+}
+
+  .about-me-item-container {
+    padding: 0;
+    max-width: 90%;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+
+  .welcome-header {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .about-me-section-header {
+    font-size: 2.5rem;
+    padding-bottom: 7rem;
+  }
+
+  .profile-picture {
+    margin-top: -3rem;
+  }
+
+  .right-section {
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .about-me-header {
+    font-size: 2rem;
+    padding: 5rem 0 3rem 0;
+  }
+
+  .about-me-item-container {
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+
+  .left-section {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .accomplishment1 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .accomplishment-header {
+    font-size: 1.75rem;
+  }
+
+  .arrow {
+    right: 44%;
+  }
+
+}
+
+
+
+
+
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.popup-button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100000000000000000000;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 4rem;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  max-width: 70%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  z-index: 100000000000000000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: .3s;
+  z-index: 100000000000000000000;
+}
+
+.popup .close:hover {
+  color: red;
+  z-index: 100000000000000000000;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.copy-header {
+  text-align: center;
+}
+
+.discord-text {
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+  transition: .3s;
+  color: black;
+}
+
+.discord-text:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.discord-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.hidden {
+  color: white;
+  border: none !important;
+  opacity: 0;
+  margin-top: -2rem;
+}
+
+.copytxt {
+  cursor: crosshair;
+}
