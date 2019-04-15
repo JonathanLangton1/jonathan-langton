@@ -23,6 +23,7 @@ function myFunction(e){
       }
 }
 
+$(document).ready(function(){
 $(".arrow-click").click(function() {
   var box = $(".image-container"),
     x;
@@ -38,3 +39,4 @@ $(".arrow-click").click(function() {
     })
   }
 })
+});
