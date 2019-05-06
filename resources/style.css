@@ -4,7 +4,6 @@
  padding: 0;
  font-family: 'Montserrat', sans-serif;
  border: none !important;
- -webkit-overflow-scrolling: touch;
 }
 
 button {
@@ -23,6 +22,7 @@ li {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .button {
@@ -296,26 +296,37 @@ body {
   text-align: center;
 }
 
+.arrow-middle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a.arrow-a {
+  text-decoration: none;
+}
+
 .arrow {
   font-size: 100px;
-  bottom: 0;
-  position: absolute;
-  z-index: 0;
-  right: 49%;
   transition: .3s;
   cursor: default;
   color: white;
+  position: relative;
+  display: flex;
+  padding-bottom: 0rem;
 }
 
 .arrow:hover {
-  bottom: 1rem;
+  padding-bottom: 1rem;
   color: black;
 }
 
 .arrow:active {
-  transition: .2s;
+  transition: .1s;
   color: white;
-  bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 #home {
@@ -1001,4 +1012,22 @@ a.main-menu-click {
 
 .copytxt {
   cursor: crosshair;
+}
+
+/* All Mobile Devices */
+@media (pointer:coarse) {
+    .arrow {
+      display: relative;
+    }
+
+    .welcome-header {
+      font-size: 1rem;
+      border-bottom: 2px solid white !important;
+    }
+
+    .welcome-message {
+      border-bottom: 3px solid white !important;
+      border: none !important;
+      padding: 1rem;
+    }
 }
