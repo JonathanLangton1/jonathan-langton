@@ -1,9 +1,11 @@
+// Border Toggle Button
 $(document).ready(function(){
     $("button.button").click(function(){
         $("*").toggleClass("border");
     });
 });
 
+// Menu Animation
 $(document).ready(function(){
     $("button.menu-toggle").click(function(){
         $(".main-menu-container").toggleClass("left-0");
@@ -21,6 +23,8 @@ var button = document.getElementById( 'menu-toggle' );
     });
 });
 
+
+// Fade In Effect
 $(document).ready(function(){
     $(".fade-in").ready(function(){
         $(".fade-in").toggleClass("visible");
@@ -40,6 +44,7 @@ function myFunction(e){
       }
 }
 
+// Image Scroller
 $(document).ready(function(){
 $(".arrow-click").click(function() {
   var box = $(".image-container"),
@@ -58,7 +63,7 @@ $(".arrow-click").click(function() {
 })
 });
 
-
+// Menu Toggle Animation
 $(document).ready(function(){
 var button = document.getElementById( 'menu-toggle' );
 
@@ -76,39 +81,20 @@ button.onclick = function() {
 });
 
 
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
+// Smooth Scroll
+$(document).ready(function(){
+  let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+  for (let item of anchorlinks) { // relitere
+      item.addEventListener('click', (e)=> {
+          let hashval = item.getAttribute('href')
+          let target = document.querySelector(hashval)
+          target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+          })
+          history.pushState(null, null, hashval)
+          e.preventDefault()
+      })
+  }
+});

@@ -36,7 +36,6 @@ html, body {
 
 /* Background */
 body {
-  scroll-behavior: smooth;
 	width: 100wh;
 	height: 100vh;
 	color: #fff;
