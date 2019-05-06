@@ -313,8 +313,6 @@ a.arrow-a {
   transition: .3s;
   cursor: default;
   color: white;
-  position: relative;
-  display: flex;
   padding-bottom: 0rem;
 }
 
