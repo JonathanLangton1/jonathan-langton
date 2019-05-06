@@ -1046,12 +1046,9 @@ a.main-menu-click {
     }
 
     .arrow-middle {
-      position: fixed;
+      display: none;
     }
 
-    .arrow {
-      position: fixed;
-    }
 
     .welcome-header {
       font-size: 1rem;
