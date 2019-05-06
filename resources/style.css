@@ -644,6 +644,9 @@ user-select: none;
   right: 0;
 }
 
+#menu-toggle {
+  position: absolute;
+}
 
 button,
 input[type="button"] {
