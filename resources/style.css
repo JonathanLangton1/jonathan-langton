@@ -45,6 +45,7 @@ body {
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
+  -webkit-overflow-scrolling: touch;
 }
 
 @-webkit-keyframes Gradient {
@@ -285,6 +286,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: -1;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fixed-background {
@@ -294,6 +296,7 @@ body {
   z-index: -1;
   position: absolute;
   text-align: center;
+  -webkit-overflow-scrolling: touch;
 }
 
 .arrow-middle {
@@ -1014,8 +1017,20 @@ a.main-menu-click {
 
 /* All Mobile Devices */
 @media (pointer:coarse) {
-    .arrow {
-      display: relative;
+    .whole-page-container {
+      position: relative;
+    }
+
+    .fixed-background {
+      position: relative;
+    }
+
+    body {
+      position: relative;
+    }
+
+    .arrow-middle {
+      position: fixed;
     }
 
     .welcome-header {
