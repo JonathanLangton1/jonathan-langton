@@ -724,7 +724,7 @@ input[type="button"] {
   transition: .3s;
   position: fixed;
   width: 20rem;
-  z-index: 100;
+  z-index: 1000000000000000;
   height: 100%;
   background-color: white;
   box-shadow: 1px 0 1rem 1px black;
@@ -1016,6 +1016,10 @@ a.main-menu-click {
 
 /* All Mobile Devices */
 @media (pointer:coarse) {
+    .header-container {
+      position: absolute;
+    }
+
     .whole-page-container {
       position: relative;
     }
