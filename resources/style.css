@@ -1049,6 +1049,10 @@ a.main-menu-click {
       position: fixed;
     }
 
+    .arrow {
+      position: fixed;
+    }
+
     .welcome-header {
       font-size: 1rem;
       border-bottom: 2px solid white !important;
