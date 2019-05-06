@@ -20,14 +20,54 @@
       <ul class="header-list-container">
         <li class="header-li"><a href="#home" class="header-list">Home</a></li>
         <li class="header-li"><a href="#portfolio" class="header-list">Portfolio</a></li>
-        <li class="header-li"><a href="#about-me" class="header-list">About Me</a></li>
+        <li class="header-list-dropdown">
+
+          <div class="dropdown-container">
+
+          <p class="header-list pointer no-border no-line-break">About Me <span class="arrow-closed">▼</span><span class="arrow-open">▶</span></p>
+
+          <div class="menu-down-container">
+            <div class="menu-down">
+              <a href="#about-me" class="header-list dropdown-padding web-dev">Website Dev</a>
+              <a href="#about-me" class="header-list dropdown-padding web-dev">Graphic Design</a>
+            </div>
+          </div>
+        </div>
+
+        </li>
       </ul>
 
       <ul class="contact-list-container">
         <li class="contact-li"><a href="#popup1"><img src="./resources/images/Discord-Logo-Black.png" alt="discord logo" class="discord-logo popup-button" /></a></li>
         <li class="contact-li"><a href="mailto:Jonathan@langtons.me" target="_blank"><img src="./resources/images/main-logo.png" alt="discord logo" class="mail-logo" /></a></li>
       </ul>
+
+
+    <div class="mobile-dropdown">
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+          <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+            <g class="svg-menu-toggle">
+              <path class="line line-1" d="M5 13h90v14H5z"/>
+              <path class="line line-2" d="M5 43h90v14H5z"/>
+              <path class="line line-3" d="M5 73h90v14H5z"/>
+            </g>
+          </svg>
+      </button>
     </div>
+
+  </div>
+
+
+  <div class="main-menu-container">
+    <h1 class="main-menu-header">Menu</h1>
+    <ul class="main-menu-menu">
+      <a href="#home" class="main-menu-click border-top"><li class="main-menu-item">Home</li></a>
+      <a href="#portfolio" class="main-menu-click border-top-bottom"><li class="main-menu-item">Website Portfolio</li></a>
+      <a href="#" class="main-menu-click border-bottom"><li class="main-menu-item">Graphic Design</li></a>
+    </ul>
+
+
+  </div>
 
 
 
@@ -123,8 +163,8 @@
                 <p class="accomplishment-text">Devizes to Westminster canoe race is arguably the most challenging canoe race in the world. It's 125 miles long, split over 4 days and has 77 portages (locks in the canal that you have to get the boat out and run round then put it back in as fast as you can). It pushes you to your mental and physical limits. I competed in the 2018 DW race with my kayaking partner Adam (In a double kayak (K2)). We had been training for 6 months and unfortunately, due to the harsh weather conditions, the race was called off half way. We placed 9th overall and felt as if we had unfinished business and so we continued training three times every week for the next year to take on the challenge once again.</p>
 
                 <div class="image-container-outer">
-                  <div class="left-scroll arrow-left arrow-click">&#8672;</div>
-                  <div class="right-scroll arrow-right arrow-click">&#8674;</div>
+                  <div class="left-scroll arrow-left arrow-click">«</div>
+                  <div class="right-scroll arrow-right arrow-click">»</div>
 
                 <div class="image-container">
                   <img src="./resources/images/DW-2018.JPG" alt="DW Image" class="port-image" />
