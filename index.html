@@ -11,9 +11,14 @@
   </head>
   <body>
 
+    <!-- Not Completed Bar -->
+    <div class="not-completed">
+      <p class="not-completed-text">THIS WEBSITE IS CURRENTLY IN DEVELOPMENT</p>
+    </div>
+
     <!-- Header -->
 
-    <div class="header-container">
+    <div class="header-container" id="header">
       <button class="button">BT</button>
       <h1 class="logo">JL</h1>
 
@@ -38,25 +43,10 @@
       </ul>
 
       <ul class="contact-list-container">
-        <li class="contact-li"><a href="#popup1"><img src="./resources/images/Discord-Logo-Black.png" alt="discord logo" class="discord-logo popup-button" /></a></li>
         <li class="contact-li"><a href="mailto:Jonathan@langtons.me" target="_blank"><img src="./resources/images/main-logo.png" alt="discord logo" class="mail-logo" /></a></li>
       </ul>
 
-
-    <div class="mobile-dropdown">
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
-          <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
-            <g class="svg-menu-toggle">
-              <path class="line line-1" d="M5 13h90v14H5z"/>
-              <path class="line line-2" d="M5 43h90v14H5z"/>
-              <path class="line line-3" d="M5 73h90v14H5z"/>
-            </g>
-          </svg>
-      </button>
-    </div>
-
   </div>
-
 
   <div class="main-menu-container">
     <h1 class="main-menu-header">Menu</h1>
@@ -65,26 +55,19 @@
       <a href="#portfolio" class="main-menu-click border-top-bottom"><li class="main-menu-item">Website Portfolio</li></a>
       <a href="#" class="main-menu-click border-bottom"><li class="main-menu-item">Graphic Design</li></a>
     </ul>
-
-
   </div>
 
-
-
-    <div id="popup1" class="overlay">
-    	<div class="popup">
-    		<h2 class="copy-header">Click To Copy To Clipboard</h2>
-    		<a class="close" href="#">&times;</a>
-    		<div class="content">
-
-          <div class="hidden">
-            <input type="text" id="copytxt"/>
-          </div>
-
-    			<p class="discord-text" id="myInput" onClick='myFunction(this)'>Jonnie#9096</p>
-    		</div>
-    	</div>
-    </div>
+  <div class="mobile-dropdown">
+    <button class="menu-toggle black" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+          <g class="svg-menu-toggle">
+            <path class="line line-1" d="M5 13h90v14H5z"/>
+            <path class="line line-2" d="M5 43h90v14H5z"/>
+            <path class="line line-3" d="M5 73h90v14H5z"/>
+          </g>
+        </svg>
+    </button>
+  </div>
 
 
     <!-- Fixed Background -->
@@ -151,7 +134,7 @@
           <div class="left-right-container">
           <div class="left-section">
             <h1 class="about-me-header">Introduction</h1>
-            <p class="about-me-speech"><i>"Hello, I'm Jonathan. My interests are mostly related to computers, however, I love setting myself challenges and then going out to complete them, no matter how crazy they seem. I've listed some of my accomplishments & hobbies below and hopefulyl I'll be able to expand the list over the years to come. I've always had an interest in computers ever since I got my first PC. I first started out using it to play games, but then started to get curious about how everything is displayed. I experimented with HTML and CSS code on the school computers and found that there was something extremely satisfying about creating a website from scratch, so I sent myself on a 10 week accelerated codeacademy website development course. I loved it, and looking back at it, my understanding of HTML, CSS, JavaScript and my interest in web development has increased exponentially. I created this website partly because the domain <i>'JonathanLangton.com'</i> wasn't taken yet, but also because I wanted a central place where I could keep a little summary of my life."</i></P>
+            <p class="about-me-speech"><i>"Hello, I'm Jonathan. My interests are mostly related to computers, however, I love setting myself challenges and then going out to complete them, no matter how crazy they seem. I've listed some of my accomplishments & hobbies below and hopefulyl I'll be able to expand the list over the years to come.</i></p>
           </div>
 
           <div class="right-section">
@@ -160,34 +143,17 @@
             <div class="accomplishments-container">
 
 
+            <a href="#" title="Click to read more" class="center">
               <div class="accomplishment1">
-                <h1 class="accomplishment-header">Devizes To Westminster Canoe Race | Easter 2018/19</h1>
-                <p class="accomplishment-text">Devizes to Westminster canoe race is arguably the most challenging canoe race in the world. It's 125 miles long, split over 4 days and has 77 portages (locks in the canal that you have to get the boat out and run round then put it back in as fast as you can). It pushes you to your mental and physical limits. I competed in the 2018 DW race with my kayaking partner Adam (In a double kayak (K2)). We had been training for 6 months and unfortunately, due to the harsh weather conditions, the race was called off half way. We placed 9th overall and felt as if we had unfinished business and so we continued training three times every week for the next year to take on the challenge once again.</p>
-
-                <div class="image-container-outer">
-                  <div class="left-scroll arrow-left arrow-click">«</div>
-                  <div class="right-scroll arrow-right arrow-click">»</div>
-
-                <div class="image-container">
-                  <img src="./resources/images/DW-2018.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                  <img src="./resources/images/DW-2018-1.JPG" alt="DW Image" class="port-image" />
-                </div>
+                <h1 class="accomplishment-header">Devizes To Westminster Canoe Race | Easter 2018 + 19</h1>
               </div>
-            </div>
+            </a>
 
-
-
-              <div class="accomplishment1">
+            <a href="#" title="Click to read more" class="center">
+              <div class="accomplishment2">
                 <h1 class="accomplishment-header">Codecademy Pro Intensive "Build Websites from Scratch" Course | Oct 2018</h1>
-                <p class="accomplishment-text">This course is a 10-week curriculum of website development fundamentals using HTML, CSS, JavaScript and Github. I found this course thoroughly enjoyable and has been a real spark for me. This course allowed me to find my passion for coding and I hope to continue learning different languages in the years to come (especially JavaScript and Python). <a href="https://www.credential.net/d912445u" target="_blank" class="certificate">Click here to view the certificate</a></p>
               </div>
-
+            </a>
 
             </div>
 

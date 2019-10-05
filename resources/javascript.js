@@ -31,19 +31,6 @@ $(document).ready(function(){
     });
 });
 
-function myFunction(e){
-  var c=document.getElementById('copytxt');
-  c.value=e.textContent;
-      c.select();
-      try {
-    var successful = document.execCommand('copy')
-    var msg = successful ? 'successfully' : 'unsuccessfully'
-    alert('Copied!');
-      }catch(err) {
-    alert('Falied to copy.');
-      }
-}
-
 // Image Scroller
 $(document).ready(function(){
 $(".arrow-click").click(function() {
@@ -97,4 +84,8 @@ $(document).ready(function(){
           e.preventDefault()
       })
   }
+});
+
+$(document).scroll(function(e) {
+    $(window).scrollTop() > 100 ? $('#header').addClass('opacity') : $('#header').removeClass('test');
 });

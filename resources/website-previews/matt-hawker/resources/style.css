@@ -103,7 +103,7 @@ html {
 
 /* Back Button */
 .back-button {
-  background-color: white;
+  background-color: red;
   position: fixed;
   top: 5rem;
   left: 5rem;
@@ -125,7 +125,8 @@ html {
 }
 
 .back-button-a {
-	color: black;
+	color: white;
+  font-weight: bold;
 }
 
 /* Landing Page */
