@@ -142,7 +142,6 @@ body {
   align-items: center;
   z-index: 10000000000000;
   min-height: 84px;
-  background-color: rgba(0,0,0,0);
   transition: .3s;
   margin-top: 2.1rem;
 }

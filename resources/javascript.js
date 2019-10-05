@@ -85,7 +85,3 @@ $(document).ready(function(){
       })
   }
 });
-
-$(document).scroll(function(e) {
-    $(window).scrollTop() > 100 ? $('#header').addClass('opacity') : $('#header').removeClass('test');
-});
