@@ -377,28 +377,49 @@ a.arrow-a {
 /* Portfolio Section */
 .python-portfolio {
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   padding: 3rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8rem;
+  border-bottom: 2px solid black !important;
+  border: 1px solid red !important;
+  padding-bottom: 10rem;
+}
+
+.tags {
+  position: absolute;
+  z-index: 30;
+  padding: 1rem;
+  color: white;
+}
+
+.python-port-a {
+  max-width: 100%;
+  width: 100%;
+  border: 5px solid green !important;
+  margin: 3rem 0 1.5rem 0;
 }
 
 .python-item {
-  width: 70rem;
   min-width: 17.5rem;
+  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 20rem;
-  margin: 3rem 0 1.5rem 0;
+  max-height: 23rem;
   transition: .3s;
+  border: 1px solid red !important;
+  overflow: hidden;
 }
 
 .python-item-header {
-  width: 70rem;
-  height: 3rem;
+  width: 100%;
+  height: 21rem;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,12 +428,12 @@ a.arrow-a {
 }
 
 .python-item-header-text {
-  color: black;
+  color: white;
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
-  align-self: center;
   z-index: 15;
+  padding: 1rem;
+  border: 3px solid white !important;
 }
 
 .thumbnail {
@@ -424,6 +445,13 @@ a.arrow-a {
   z-index: 10;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: .3s;
+  max-width: 100%;
+}
+
+.python-item:hover > .thumbnail {
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 .python-item:hover {
@@ -433,6 +461,7 @@ a.arrow-a {
 .portfolio-container {
   background-color: white;
   z-index: 100;
+  max-width: 100% !important;
   margin-top: 61.25rem;
   display: flex;
   justify-content: center;
@@ -440,6 +469,7 @@ a.arrow-a {
   padding: 5rem;
   flex-direction: column;
   position: relative;
+  border: 1px solid red !important;
 }
 
 .portfolio-header {
@@ -461,7 +491,6 @@ a.arrow-a {
 .portfolio-item {
   background-color: white;
   width: 37.5rem;
-  min-width: 17.5rem;
   color: black;
   text-align: center;
   margin: 2.5%;
@@ -790,6 +819,7 @@ user-select: none;
   .portfolio-container {
     padding: 1rem;
     padding-top: 5rem;
+    max-width: 100% !important;
   }
 
 .mobile-dropdown {
@@ -1011,7 +1041,7 @@ a.main-menu-click {
 
   .right-section {
     width: 100%;
-    min-width: 100%;
+    max-width: 100%;
     padding: 0;
     border: 0 !important;
   }
@@ -1029,6 +1059,7 @@ a.main-menu-click {
 
   .left-section {
     padding: 0;
+    max-width: 100%;
     padding-bottom: 2rem;
   }
 
@@ -1205,6 +1236,7 @@ a.main-menu-click {
 
     .portfolio-container {
       margin-top: 0;
+      max-width: 100% !important;
     }
 
     .header-container {
