@@ -4,6 +4,7 @@
  padding: 0;
  font-family: 'Montserrat', sans-serif;
  border: none !important;
+ min-width: 1px !important;
 }
 
 button {
@@ -385,7 +386,6 @@ a.arrow-a {
   align-items: center;
   margin-bottom: 8rem;
   border-bottom: 2px solid black !important;
-  border: 1px solid red !important;
   padding-bottom: 10rem;
 }
 
@@ -399,7 +399,6 @@ a.arrow-a {
 .python-port-a {
   max-width: 100%;
   width: 100%;
-  border: 5px solid green !important;
   margin: 3rem 0 1.5rem 0;
 }
 
@@ -411,7 +410,6 @@ a.arrow-a {
   flex-direction: column;
   max-height: 23rem;
   transition: .3s;
-  border: 1px solid red !important;
   overflow: hidden;
 }
 
@@ -469,7 +467,6 @@ a.arrow-a {
   padding: 5rem;
   flex-direction: column;
   position: relative;
-  border: 1px solid red !important;
 }
 
 .portfolio-header {
@@ -486,6 +483,7 @@ a.arrow-a {
   align-items: center;
   padding: 5rem;
   flex-direction: row;
+  min-width: 0px;
 }
 
 .portfolio-item {
@@ -556,6 +554,7 @@ a.arrow-a {
   background-color: #72B2A4;
   color: white;
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
 .about-me-speech {
@@ -590,7 +589,7 @@ a.arrow-a {
 
 .left-section {
   min-width: 100%;
-  max-width: 60%;
+  width: 100%;
   padding-bottom: 2rem;
   border-bottom: 3px solid gray !important;
   margin-bottom: 3rem;
@@ -666,6 +665,7 @@ a.arrow-a {
 .center {
   display: flex;
   max-width: 100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -1028,6 +1028,24 @@ a.main-menu-click {
   }
 }
 
+
+@media only screen and (max-width: 812px) {
+  .item-container {
+    width: 100%
+  }
+
+  .python-portfolio {
+    max-width: 100%;
+  }
+
+  #portfolio {
+    padding: 0;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 400px) {
 
   .about-me-section-header {
@@ -1060,6 +1078,7 @@ a.main-menu-click {
   .left-section {
     padding: 0;
     max-width: 100%;
+    width: 100%;
     padding-bottom: 2rem;
   }
 
