@@ -1,0 +1,258 @@
+/* Global */
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+ border: none !important;
+ min-width: 1px !important;
+}
+
+button {
+  display: none;
+  outline: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+.border {
+  border: 1px solid red !important;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  margin-left: 1rem;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.opacity {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Fade Effect */
+.fade-in {
+  opacity: 0;
+  transition: 1s;
+  transform: scale(0.97);
+}
+
+.visible {
+  transition: 1s;
+  opacity: 1 !important;
+  transform: scale(1);
+}
+
+
+/* Header */
+.header-container {
+  width: 100%;
+  max-width: 100%;
+  height: 10%;
+  position: fixed;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  z-index: 10000000000000;
+  min-height: 84px;
+  transition: .3s;
+}
+
+.header-container:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-weight: 300;
+  margin-left: 10%;
+  border: 1px solid black;
+  color: black;
+}
+
+.header-list {
+  text-decoration: none;
+  color: black;
+}
+
+.header-list-container {
+  border: 1px solid black;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 4rem;
+  justify-content: space-around;
+}
+
+.header-li {
+  margin: 1rem;
+  border: 1px solid red;
+  border-bottom: 0px solid rgba(0,0,0,0) !important;
+  transition: .3s;
+}
+
+.header-list-dropdown {
+  margin: 1rem;
+  border: 1px solid red;
+  border-bottom: 0px solid rgba(0,0,0,0) !important;
+  transition: .3s;
+}
+
+.header-li:hover {
+  border-bottom: 3px solid black !important;
+}
+
+.contact-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  justify-content: space-around;
+  right: 5rem;
+}
+
+.contact-li {
+  margin-left: 2rem;
+  transition: .3s;
+}
+
+.contact-li:hover {
+  margin-top: 0.5rem;
+}
+
+.discord-logo {
+  height: 2rem;
+}
+
+.mail-logo {
+  height: 3rem;
+}
+
+.main-menu-container {
+  display: none;
+}
+
+
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-down {
+  border: 1px solid black;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  background-color: none;
+  justify-content: center;
+  transition: .5s;
+  display: none;
+  opacity: 0;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border: 1px solid black !important;
+}
+
+.menu-down-container {
+  position: relative;
+  display: flex;
+  transition: .5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-container:hover .menu-down {
+  display: flex;
+  opacity: 1;
+}
+
+.arrow-open {
+  display: none;
+  font-size: 0.95rem;
+  align-self: center;
+  margin-bottom: 0.1rem;
+}
+
+.dropdown-container:hover .arrow-open {
+  display: inline;
+}
+
+.dropdown-container:hover .arrow-closed {
+  display: none;
+}
+
+.no-line-break {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.web-dev {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-bottom: 0px solid black !important;
+}
+
+.web-dev:hover {
+  border-bottom: 0.1px solid black !important;
+}
+
+.check:checked .menu-down{
+  display: flex;
+}
+
+.dropdown-padding {
+  padding: 0.2rem 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-border:hover {
+  border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Landing Page */
+.header-image {
+  border: 1px solid red !important;
+  width: 100%;
+  height: 25rem;
+  background-image: url("./images/DW/1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dw-title {
+  color: white;
+  font-size: 2rem;
+  opacity: 1;
+}
