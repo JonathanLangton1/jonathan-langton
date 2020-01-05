@@ -57,180 +57,67 @@ a {
 }
 
 
-/* Header */
-.header-container {
+
+/* Back Button*/
+.touchalytics-header {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button {
+  z-index: 12;
+  position: fixed;
+  font-size: 2rem;
+  background-color: white;
+  padding: 0.5rem;
+  top: 1.3rem;
+  left: 1.2rem;
+  color: #72B2A4;
+  transition: .3s;
+  border: 3px solid white !important;
+}
+
+.back-button:hover {
+  color: white;
+  background-color: #72B2A4;
+}
+
+.back-button:active {
+  color: black;
+}
+
+.page-container {
   width: 100%;
   max-width: 100%;
-  height: 10%;
+  height: 90%;
+  bottom: 0;
   position: fixed;
-  border: 1px solid red;
   display: flex;
-  align-items: center;
-  z-index: 10000000000000;
-  min-height: 84px;
-  transition: .3s;
-}
-
-.header-container:hover {
-  background-color: rgba(0,0,0,0.2);
-}
-
-.logo {
-  font-weight: 300;
-  margin-left: 10%;
-  border: 1px solid black;
-  color: black;
-}
-
-.header-list {
-  text-decoration: none;
-  color: black;
-}
-
-.header-list-container {
-  border: 1px solid black;
-  display: inline-flex;
-  height: 100%;
-  align-items: center;
-  margin-left: 4rem;
-  justify-content: space-around;
-}
-
-.header-li {
-  margin: 1rem;
-  border: 1px solid red;
-  border-bottom: 0px solid rgba(0,0,0,0) !important;
-  transition: .3s;
-}
-
-.header-list-dropdown {
-  margin: 1rem;
-  border: 1px solid red;
-  border-bottom: 0px solid rgba(0,0,0,0) !important;
-  transition: .3s;
-}
-
-.header-li:hover {
-  border-bottom: 3px solid black !important;
-}
-
-.contact-list-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: fixed;
-  justify-content: space-around;
-  right: 5rem;
-}
-
-.contact-li {
-  margin-left: 2rem;
-  transition: .3s;
-}
-
-.contact-li:hover {
-  margin-top: 0.5rem;
-}
-
-.discord-logo {
-  height: 2rem;
-}
-
-.mail-logo {
-  height: 3rem;
-}
-
-.main-menu-container {
-  display: none;
-}
-
-
-
-.dropdown-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
   justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 3rem;
 }
 
-.menu-down {
-  border: 1px solid black;
-  position: relative;
-  flex-direction: column;
-  align-content: center;
-  background-color: none;
-  justify-content: center;
-  transition: .5s;
-  display: none;
-  opacity: 0;
-  padding: 0.5rem;
-  margin-left: 1rem;
-  border: 1px solid black !important;
+@media only screen and (max-width: 525px) {
+  .back-button {
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    border: none !important;
+    padding: 1rem 0 1rem 0;
+    background-color: lightgray;
+  }
 }
-
-.menu-down-container {
-  position: relative;
-  display: flex;
-  transition: .5s;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown-container:hover .menu-down {
-  display: flex;
-  opacity: 1;
-}
-
-.arrow-open {
-  display: none;
-  font-size: 0.95rem;
-  align-self: center;
-  margin-bottom: 0.1rem;
-}
-
-.dropdown-container:hover .arrow-open {
-  display: inline;
-}
-
-.dropdown-container:hover .arrow-closed {
-  display: none;
-}
-
-.no-line-break {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.web-dev {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  border-bottom: 0px solid black !important;
-}
-
-.web-dev:hover {
-  border-bottom: 0.1px solid black !important;
-}
-
-.check:checked .menu-down{
-  display: flex;
-}
-
-.dropdown-padding {
-  padding: 0.2rem 0;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.no-border:hover {
-  border: none !important;
-}
-
-
-
 
 
 
@@ -240,19 +127,51 @@ a {
 
 /* Landing Page */
 .header-image {
-  border: 1px solid red !important;
   width: 100%;
+  min-width: 100%;
   height: 25rem;
-  background-image: url("./images/DW/1.jpg");
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-img {
+  width: 100%;
+  min-width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.zoom img {
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	max-width: 200%;
+	width: 101%;
+	transform: translateX(-50%);
+}
+
+.zoom h1 {
+	max-width: 200%;
+	transform: translateX(-50%);
+  position: fixed;
+  left: 50%;
 }
 
 .dw-title {
   color: white;
   font-size: 2rem;
   opacity: 1;
+  z-index: 11;
+}
+
+
+/* Body */
+.body {
+  width: 100%;
+  height: 100rem;
+  z-index: 100;
+  background-color: white;
 }
