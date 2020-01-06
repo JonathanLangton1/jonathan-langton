@@ -25,6 +25,14 @@ li {
   border: 1px solid red !important;
 }
 
+body {
+  overflow: hidden;
+}
+
+.overscroll-fix {
+  overflow: auto;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
