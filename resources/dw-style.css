@@ -77,7 +77,7 @@ a {
 }
 
 .back-button {
-  z-index: 12;
+  z-index: 18;
   position: fixed;
   font-size: 2rem;
   background-color: white;
@@ -112,17 +112,24 @@ a {
 
 @media only screen and (max-width: 525px) {
   .back-button {
-    bottom: 0;
+    bottom: 1rem;
     top: auto;
-    width: 100%;
-    max-width: 100%;
+    width: 6rem;
     right: 0;
-    left: 0;
+    left: 1rem;
     padding: 0;
     text-align: center;
+    padding: 2rem 0 1rem 0;
+    background-color: white;
     border: none !important;
-    padding: 1rem 0 1rem 0;
-    background-color: lightgray;
+    font-size: 2.5rem;
+    z-index: 10000;
+    border: 2px solid #72B2A4 !important;
+    border-radius: 50%;
+  }
+
+  .touchalytics-header {
+    z-index: 10000;
   }
 }
 
@@ -136,7 +143,7 @@ a {
 .header-image {
   width: 100%;
   min-width: 100%;
-  height: 15%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,10 +177,17 @@ a {
 .dw-title {
   color: white;
   font-size: 2rem;
+  text-align: center;
   opacity: 1;
-  z-index: 11;
+  z-index: 10;
+  width: 90%;
 }
 
+.time {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
 
 /* Body */
 .body {
@@ -181,4 +195,60 @@ a {
   height: 100rem;
   z-index: 100;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.column-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 15;
+}
+
+.left-column {
+  max-width: 49%;
+  width: 49%;
+  height: 100%;
+  background-color: #D3D3D3;
+}
+
+.right-column {
+  max-width: 49%;
+  width: 49%;
+  height: 100%;
+  background-color: #D3D3D3;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design*/
+@media only screen and (max-width: 1058px) {
+  .column-container {
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .left-column {
+    width: 100%;
+    max-width: 100%;
+    height: 49%;
+  }
+
+  .right-column {
+    width: 100%;
+    max-width: 100%;
+    height: 49%;
+  }
 }

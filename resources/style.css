@@ -1,10 +1,3 @@
-.fix-pls {
-  overflow: auto;
-}
-
-#header {
-  z-index: 10000000000000000000000000000000;
-}
 /* Global */
 * {
  margin: 0;
@@ -30,7 +23,6 @@ li {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 

@@ -53,9 +53,7 @@ $(".arrow-click").click(function() {
 // Menu Toggle Animation
 $(document).ready(function(){
 var button = document.getElementById( 'menu-toggle' );
-
 button.onclick = function() {
-
   if ( -1 !== button.className.indexOf( 'opened' ) ) {
     button.className = button.className.replace( ' opened', '' );
     button.setAttribute( 'aria-expanded', 'false' );
@@ -63,7 +61,6 @@ button.onclick = function() {
      button.className += ' opened';
     button.setAttribute( 'aria-expanded', 'true' );
    }
-
  };
 });
 
