@@ -7,6 +7,11 @@
  min-width: 1px !important;
 }
 
+html {
+  /* only disable pull-to-refresh but allow swipe navigations */
+  overscroll-behavior-y: contain;
+}
+
 button {
   display: none;
   outline: none !important;
