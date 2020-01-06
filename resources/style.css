@@ -2,6 +2,9 @@
   overflow: auto;
 }
 
+#header {
+  z-index: 10000000000000000000000000000000;
+}
 /* Global */
 * {
  margin: 0;
