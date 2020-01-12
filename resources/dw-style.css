@@ -27,7 +27,6 @@ li {
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     height: 100%;
     width: 100%;
@@ -84,14 +83,16 @@ a {
   padding: 0.5rem;
   top: 1.3rem;
   left: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: #72B2A4;
-  transition: .3s;
+  transition: .1s;
   border: 3px solid white !important;
 }
 
 .back-button:hover {
   color: white;
-  background-color: #72B2A4;
+  background-color: transparent;
 }
 
 .back-button:active {
@@ -142,36 +143,24 @@ a {
 /* Landing Page */
 .header-image {
   width: 100%;
-  min-width: 100%;
-  height: 40%;
+  height: 24rem;
   display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  object-fit: cover;
 }
 
 .header-img {
-  width: 100%;
-  min-width: 100%;
-  height: 25rem;
   object-fit: cover;
-  z-index: -1;
   filter: brightness(0.6);
-}
-
-.zoom img {
-	position: fixed;
-	top: 0%;
-	left: 50%;
-	max-width: 200%;
-	width: 101%;
-	transform: translateX(-50%);
-}
-
-.zoom h1 {
-	max-width: 200%;
-	transform: translateX(-50%);
+  height: 24rem;
+  width: 100%;
   position: fixed;
-  left: 50%;
+  z-index: 10;
 }
 
 .dw-title {
@@ -179,8 +168,8 @@ a {
   font-size: 2rem;
   text-align: center;
   opacity: 1;
-  z-index: 10;
   width: 90%;
+  z-index: 11;
 }
 
 .time {
@@ -190,15 +179,16 @@ a {
 }
 
 /* Body */
-.body {
+.main-body {
   width: 100%;
   height: 100rem;
-  z-index: 100;
   background-color: white;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  z-index: 15;
+  margin-top: 24rem;
+  z-index: 999 !important;
 }
 
 .column-container {
@@ -207,7 +197,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  z-index: 15;
 }
 
 .left-column {
